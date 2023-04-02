@@ -12,14 +12,16 @@
   <div class="container">
     <nav class="d-flex">  
       <div class="logo me-5">
+        <a href="{{route('home')}}">
         <img class="py-3" src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="" />
+        </a>
       </div>    
       <ul class="d-flex w-100 align-items-center justify-content-between m-0">
-        <li class="active">
+        <li class="">
           <a href="">CHARACTERS</a>
         </li>
-        <li class="">
-          <a href="">COMICS</a>
+        <li class="@if (Request::route()->getName() == 'comics') active @endif">
+          <a href="{{route('comics')}}">COMICS</a>
         </li>
         <li class="">
           <a href="">MOVIES</a>

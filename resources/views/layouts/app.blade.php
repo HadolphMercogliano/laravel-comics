@@ -17,10 +17,12 @@
     @include('partials.navbar')
   </header>
   <main>
-    <section>
-      <h1>@yield('title')</h1>
+    <section class="main-content">
+      <div class="container">
+        <h1 class="m-0 py-5">@yield('title')</h1>
+      </div>
+      @yield('comics-list')
     </section>
-   @yield('comics-list')
   </main>
    @include('partials.footer')
 </body>
