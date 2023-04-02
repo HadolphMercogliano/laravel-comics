@@ -1,9 +1,81 @@
 @import "~bootstrap/scss/bootstrap";
 
-.jumbotron {
-    min-height: 100vh;
+header {
+    .other-sites {
+        background-color: #0282f9;
+        color: white;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .logo img {
+        height: 90px;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+    #search {
+        border: none;
+        border-bottom: 2px solid #0282f9;
+    }
+    .jumbotron {
+        background-image: url(../images/jumbotron.jpg);
+        background-size: cover;
+        height: 42vh;
+        .container {
+            height: 100%;
+            position: relative;
+
+            .banner {
+                background-color: #0282f9;
+                position: absolute;
+                bottom: -15px;
+                padding: 5px 10px;
+            }
+        }
+    }
 }
 
-img {
-    max-height: 150px;
+footer {
+    ul {
+        padding: 0;
+        list-style: none;
+        li a {
+            color: rgb(158, 158, 158);
+            text-decoration: none;
+        }
+    }
+    .footer-top {
+        background-image: url(../images/footer-bg.jpg);
+        .footer-text {
+            width: 50%;
+            h4 {
+                color: white;
+            }
+        }
+        .bg-logo {
+            width: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../images/dc-logo-bg.png);
+        }
+    }
+    .footer-bot {
+        background-color: #303030;
+        margin: 0;
+        .socials {
+            ul {
+                margin: 0;
+                li {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
 }
